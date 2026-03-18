@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileNest Dental Clinic | Where Every Smile Feels at Home</title>
+    <meta name="description" content="SmileNest Dental Clinic offers premium, trustworthy, and minimal dental care. Book your appointment today.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="SmileNest Dental Clinic Logo" id="nav-logo">
+                <span class="logo-text" style="color:#C67D33" >SmileNest</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors">Experts</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary btn-book" onclick="openBookingModal(event)">Book Appointment</a>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <!-- New Hero background video -->
+        <video autoplay muted loop playsinline class="hero-bg-video">
+            <!-- Expected video path: images/hero-bg.mp4 -->
+            <source src="images/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content fade-in-up text-center w-100">
+            <h1>Welcome to <span style="color:#C67D33">SmileNest</span></h1>
+            <p>Where Every Smile Feels at Home. Experience premium, minimal, and trustworthy dental care.</p>
+            <div class="hero-buttons justify-center">
+                <button class="btn btn-primary CTA-btn" onclick="openBookingModal(event)">Book Appointment</button>
+                <a href="tel:+919036427576" class="btn btn-accent CTA-btn"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+            
+            <div class="google-rating justify-center">
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-text"><strong>4.9</strong> on Google rating</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images slide-in-left">
+                     <img src="images/clinic_reception.png" alt="SmileNest Clinic Reception" class="about-img main-img">
+                     <img src="images/treatment_room.png" alt="Modern Treatment Room" class="about-img secondary-img">
+                </div>
+                
+                <div class="about-text slide-in-right">
+                    <span class="section-tag">About Us</span>
+                    <h2>A new standard in patient-friendly care.</h2>
+                    <p>At SmileNest Dental Clinic, we believe dentistry should be a clean, comfortable, and reassuring experience. Our clinic is designed to put you at ease from the moment you step through our doors.</p>
+                    
+                    <ul class="about-features">
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+                            <div>
+                                <h4>Experienced Doctors</h4>
+                                <p>Highly skilled professionals dedicated to your smile.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-hands-wash"></i></div>
+                            <div>
+                                <h4>Strict Hygiene Standards</h4>
+                                <p>Uncompromising sterilization protocols for your safety.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+                            <div>
+                                <h4>Modern Equipment</h4>
+                                <p>State-of-the-art technology for precise, painless treatments.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-tag">Our Services</span>
+                <h2>Comprehensive Dental Care</h2>
+                <p>Advanced treatments tailored to bring out your best smile.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="service-icon"><i class="fas fa-teeth"></i></div>
+                    <h3>General Dentistry</h3>
+                    <p>Routine checkups, fillings, and preventive care to maintain optimal oral health.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-bath"></i></div>
+                    <h3>Teeth Cleaning</h3>
+                    <p>Professional scaling and polishing to remove plaque and brighten your smile.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="service-icon"><i class="fas fa-tooth" style="color:var(--dental-blue)"></i></div>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Painless and precise endodontic therapy to save decayed or infected teeth.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent, natural-looking replacements for missing teeth.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="service-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Teeth Whitening</h3>
+                    <p>Advanced whitening solutions for a brilliantly radiant smile.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="service-icon"><i class="fas fa-smile"></i></div>
+                    <h3>Braces & Aligners</h3>
+                    <p>Orthodontic solutions including clear aligners to perfect your bite and smile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-tag">Meet Our Expert</span>
+                <h2>World-Class Dental Care</h2>
+                <p>Your smile is in the hands of a passionate and highly qualified doctor.</p>
+            </div>
+            
+            <div class="doctor-profile-split fade-in-up">
+                <div class="doctor-image-cell">
+                     <img src="images/ai_doctor.png" alt="Dr. Professional Dentist" class="doctor-profile-img">
+                </div>
+                <div class="doctor-details-cell">
+                    <h3>Dr. Ankit Sharma</h3>
+                    <p class="doctor-degree">BDS, MDS - Oral & Maxillofacial Surgery</p>
+                    <p class="doctor-exp"><i class="fas fa-award"></i> 12+ Years Experience</p>
+                    <p class="doctor-bio">Dr. Sharma is dedicated to providing painless, advanced dental care with a focus on patient comfort and comprehensive treatment planning. He believes that every patient deserves a precise, clear explanation and a gentle touch.</p>
+                    <ul class="doctor-specialties">
+                        <li><i class="fas fa-check-circle" style="color:var(--clr-accent);"></i> Implantology Specialist</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--clr-accent);"></i> Full Mouth Rehabilitation</li>
+                        <li><i class="fas fa-check-circle" style="color:var(--clr-accent);"></i> Cosmetic Dentistry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <span class="section-tag">Patient Testimonials</span>
+                <h2>What Our Patients Say</h2>
+                <p>Real stories from our happy patients on Google <i class="fab fa-google" style="color:#DB4437; margin-left: 5px;"></i></p>
+            </div>
+            
+            <div class="reviews-scroll-container fade-in-up">
+                <button class="scroll-btn prev-btn" aria-label="Scroll left"><i class="fas fa-chevron-left"></i></button>
+                <div class="reviews-track" id="reviewsTrack">
+                    
+                    <!-- Google Review 1 -->
+                    <div class="testimonial-card scroll-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="review-text">"It was my first visit to a dental clinic, Doctor provided clear and thorough instructions before, during, and after the procedure, which made me feel comfortable and well-informed throughout. I'm very happy with the treatment."</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">S</div>
+                            <div class="reviewer-details">
+                                <h4>SS Sawalgi</h4>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Review 2 -->
+                    <div class="testimonial-card scroll-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="review-text">"I had a good experience at SmileNest Dental Clinic. I got my root canal treatment and crown done here. The dentist was very professional and explained everything clearly. The procedure was smooth, comfortable and painless. I would definitely recommend this clinic for dental treatment."</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar">W</div>
+                            <div class="reviewer-details">
+                                <h4>Wafiq Nadaf</h4>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Review 3 -->
+                    <div class="testimonial-card scroll-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="review-text">"Doctor attended the problem with details and fixed. Definitely recommend, anyone facing dental issues"</p>
+                        <div class="reviewer-info">
+                            <div class="reviewer-avatar" style="background-color: #673AB7;">V</div>
+                            <div class="reviewer-details">
+                                <h4>Venkat Vyas</h4>
+                                <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="scroll-btn next-btn" aria-label="Scroll right"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Info -->
+                <div class="contact-info fade-in-up">
+                    <span class="section-tag">Get in Touch</span>
+                    <h2>Visit SmileNest Today</h2>
+                    <p>We're ready to care for your smile. Reach out to book an appointment or visit our clinic.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>2nd floor, Swathi Sapphire Commercial Complex, Borewell Rd, beside Union Bank, Palm Meadows, Nallurhalli circle, Bengaluru, Karnataka 560066</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+919036427576">+91 9036427576</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fas fa-clock"></i></div>
+                            <div class="info-content">
+                                <h4>Working Hours</h4>
+                                <p><strong>Mon - Sun:</strong> 10:00 AM – 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Form embedded here -->
+                    <div class="contact-form-wrapper mt-4">
+                        <h3>Send us a message</h3>
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" placeholder="How can we help you?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Google Maps Embed -->
+                <div class="map-wrapper fade-in-up" style="animation-delay: 0.2s;">
+                   <iframe src="https://maps.google.com/maps?q=SmileNest%20Dental%20Clinic,%20Bengaluru&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="SmileNest Dental Clinic Logo" class="footer-logo">
+                     <span class="logo-text" style="color:#C67D33" >SmileNest</span>
+                    <p>Where Every Smile Feels at Home. Premium, minimal, and dependable dental care in Bengaluru.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 2nd floor, Swathi Sapphire Commercial Complex, Borewell Rd, Bengaluru 560066</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 9036427576</p>
+                </div>
+                
+                <div class="footer-hours">
+                     <h4>Working Hours</h4>
+                     <ul>
+                         <li><span>Monday - Sunday</span> <span>10:00 AM – 8:00 PM</span></li>
+                     </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SmileNest Dental Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919036427576" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Booking Modal OVERLAY -->
+    <div id="bookingModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeBookingModal()">&times;</button>
+            <h3>Book an Appointment</h3>
+            <p>Fill out the form below and we'll get back to you to confirm your slot.</p>
+            <form id="modalBookingForm" onsubmit="handleBookingSubmit(event)">
+                <div class="form-group">
+                    <input type="text" id="modalName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="modalPhone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <select id="modalService" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="General">General Dentistry</option>
+                        <option value="Cleaning">Teeth Cleaning</option>
+                        <option value="Root Canal">Root Canal Treatment</option>
+                        <option value="Implants">Dental Implants</option>
+                        <option value="Whitening">Teeth Whitening</option>
+                        <option value="Braces">Braces & Aligners</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                     <input type="date" id="modalDate" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Request Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Since we don't have python script downloading logo image yet, let's make sure the logo image is actually copied here, or we use a fallback -->
+
+    <script src="script.js"></script>
+</body>
+</html>
