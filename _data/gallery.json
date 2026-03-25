@@ -1,0 +1,14 @@
+{
+  "photos": [
+    {
+      "title": "Clinic Reception",
+      "image": "images/clinic_reception.png",
+      "caption": "Our welcoming reception area"
+    },
+    {
+      "title": "Treatment Room",
+      "image": "images/treatment_room.png",
+      "caption": "State-of-the-art treatment room"
+    }
+  ]
+}
