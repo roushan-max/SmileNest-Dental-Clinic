@@ -1,0 +1,10 @@
+{
+  "reviews": [
+    {
+      "name": "Patient 1",
+      "review": "Great experience!",
+      "rating": 5,
+      "avatar": "P"
+    }
+  ]
+}
