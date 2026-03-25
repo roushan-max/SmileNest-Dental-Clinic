@@ -1,0 +1,64 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+
+  - name: "gallery"
+    label: "Photo Gallery"
+    files:
+      - label: "Gallery Photos"
+        name: "gallery"
+        file: "_data/gallery.json"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+
+  - name: "reviews"
+    label: "Patient Reviews"
+    files:
+      - label: "Reviews List"
+        name: "reviews"
+        file: "_data/reviews.json"
+        fields:
+          - label: "Reviews"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - { label: "Patient Name", name: "name", widget: "string" }
+              - { label: "Review Text", name: "review", widget: "text" }
+              - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5, default: 5 }
+
+  - name: "doctor"
+    label: "Doctor Profile"
+    files:
+      - label: "Doctor Details"
+        name: "doctor"
+        file: "_data/doctors.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Degree", name: "degree", widget: "string" }
+          - { label: "Experience", name: "experience", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "text" }
+          - { label: "Photo", name: "photo", widget: "image" }
+
+  - name: "settings"
+    label: "Clinic Info"
+    files:
+      - label: "Settings"
+        name: "settings"
+        file: "_data/settings.json"
+        fields:
+          - { label: "Clinic Name", name: "clinicName", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Hours", name: "hours", widget: "string" }
