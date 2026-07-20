@@ -40,6 +40,23 @@
             </div>
         </div>
     </nav>
+<!-- Google Calendar Appointment Scheduling begin -->
+<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+<script>
+(function() {
+  var target = document.currentScript;
+  window.addEventListener('load', function() {
+    calendar.schedulingButton.load({
+      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Ypwv4nPWrAt60JQN_ykVOOiR8DNZH8OLyf8hqNbjQ6fgxvOEmsxowNKZ8-nfPmxze8DaT_uRA?gv=true',
+      color: '#039BE5',
+      label: 'Book an appointment',
+      target,
+    });
+  });
+})();
+</script>
+<!-- end Google Calendar Appointment Scheduling -->
 
     <!-- Hero Section -->
     <section id="home" class="hero section">
@@ -406,22 +423,5 @@
 </body>
 </html>
 
-<!-- Google Calendar Appointment Scheduling begin -->
-<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-<script>
-(function() {
-  var target = document.currentScript;
-  window.addEventListener('load', function() {
-    calendar.schedulingButton.load({
-      url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2Ypwv4nPWrAt60JQN_ykVOOiR8DNZH8OLyf8hqNbjQ6fgxvOEmsxowNKZ8-nfPmxze8DaT_uRA?gv=true',
-      color: '#039BE5',
-      label: 'Book an appointment',
-      target,
-    });
-  });
-})();
-</script>
-<!-- end Google Calendar Appointment Scheduling -->
 
 
